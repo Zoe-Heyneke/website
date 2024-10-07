@@ -1,0 +1,310 @@
+/* Reset margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: antiquewhite;
+}
+
+/* Burger Menu Styles */
+.burger {
+    cursor: pointer;
+}
+
+
+/* Show navigation when the menu toggle is checked */
+#menu-toggle:checked + .burger + nav {
+    display: flex; /* Show menu */
+    flex-direction: column; /* Stack items vertically */
+    position: absolute; /* Optional: to overlay on the content */
+    top: 60px; /* Position it below the header */
+    left: 0;
+    right: 0;
+    background-color: rgb(10, 10, 9); /* Same color as header */
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column; /* Stack items */
+    width: 100%; /* Full width */
+}
+
+nav ul li {
+    text-align: center; /* Center text */
+    margin: 10px 0; /* Spacing between items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Link color */
+}
+
+/* Header icons */
+.header-icons {
+    display: flex; /* Use Flexbox for layout */
+    align-items: center; /* Center the icons vertically */
+}
+
+.header-icons i {
+    margin-left: 20px; /* Space between icons */
+    font-size: 24px; /* Icon size */
+    color: #100e0e; /* Icon color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.header-icons i:hover {
+    color: #007BFF; /* Change color on hover */
+}
+
+/* Main content styles */
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+.main-banner {
+    margin: 20px 0;
+    font-family: 'Pacifico', cursive;
+    background-color: blanchedalmond;
+    font-size: 10px;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    background-color: bisque;
+}
+
+.category {
+    width: 30%;
+    padding: 20px; /* Adds space inside the box */
+    margin: 10px; /* Adds space between the boxes */
+    border: 1px solid #ccc; /* Border around the box */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color for the box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    text-align: center; /* Center the content inside the box */
+}
+
+.category img {
+    width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Slightly round the image corners */
+}
+
+.instant-message {
+    margin-top: 20px;
+}
+
+/* Button styling */
+.instant-message button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333; /* Button background */
+    color: white; /* Button text color */
+    border: none;
+    cursor: pointer;
+}
+
+.instant-message button:hover {
+    background-color: #555; /* Button hover color */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f8f8f8; /* Light background for the footer */
+    padding: 20px 0; /* Padding around the footer */
+    font-family: Arial, sans-serif; /* Font for the footer */
+}
+
+.footer-container {
+    display: flex; /* Use Flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: space-around; /* Space between sections */
+    max-width: 1200px; /* Max width of footer content */
+    margin: auto; /* Center the footer */
+    background-color:antiquewhite;
+}
+
+.footer-navigation,
+.footer-social-media,
+.footer-newsletter,
+.footer-secondary-info {
+    flex: 1; /* Flex grow for equal width */
+    min-width: 200px; /* Minimum width for responsiveness */
+    margin: 10px; /* Margin between sections */
+}
+
+.footer-navigation h3,
+.footer-social-media h3,
+.footer-newsletter h3,
+.footer-secondary-info h3 {
+    margin-bottom: 10px; /* Spacing below headings */
+}
+
+.footer-navigation ul,
+.footer-secondary-info ul {
+    list-style-type: none; /* Remove bullets from lists */
+    padding: 0; /* Remove default padding */
+}
+
+.footer-navigation li,
+.footer-secondary-info li {
+    margin: 5px 0; /* Space between links */
+}
+
+.footer-navigation a,
+.footer-secondary-info a {
+    text-decoration: none; /* No underline */
+    color: #333; /* Link color */
+}
+
+.footer-social-media ul {
+    display: flex; /* Flexbox for horizontal layout */
+    flex-direction: column; /* Stack items vertically */
+}
+
+.footer-social-media li {
+    margin: 5px 0; /* Space between social links */
+}
+
+.footer-social-media a {
+    color: #333; /* Link color for social media */
+    display: flex; /* Use Flexbox for icon and text */
+    align-items: center; /* Center items vertically */
+}
+
+.footer-social-media i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.footer-newsletter form {
+    display: flex; /* Use Flexbox for form layout */
+    flex-direction: column; /* Stack input and button */
+}
+
+.footer-newsletter input[type="email"] {
+    padding: 10px; /* Padding for input */
+    margin-bottom: 10px; /* Space below input */
+    border: 1px solid #ccc; /* Border for input */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.footer-newsletter button {
+    padding: 10px; /* Padding for button */
+    background-color: #333; /* Button background */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+}
+
+.footer-newsletter button:hover {
+    background-color: #555; /* Darker on hover */
+}
+
+.footer-branding {
+    text-align: center; /* Center branding text */
+    margin-top: 20px; /* Space above branding */
+    font-size: 14px; /* Font size for branding */
+    color: #777; /* Lighter color for branding text */
+}
+
+/*/////////////////////////////////////
+/* Reset margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: antiquewhite;
+}
+
+.header-icons {
+    display: flex; /* Use Flexbox for layout */
+    align-items: center; /* Center the icons vertically */
+    justify-content: flex-end; /* Align icons to the right */
+}
+
+.header-icons i {
+    margin-left: 20px; /* Space between icons */
+    font-size: 24px; /* Icon size */
+    color: #333; /* Icon color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.header-icons i:hover {
+    color: #007BFF; /* Change color on hover */
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 28px;
+    color: black;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Link color */
+}
+
+/* Main content styles */
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+.about-container {
+    max-width: 800px; /* Limit width of content */
+    margin: auto; /* Center the content */
+    padding: 20px; /* Padding around the content */
+}
+
+.about-container h1 {
+    font-size: 32px; /* Title font size */
+    margin-bottom: 20px; /* Space below title */
+}
+
+.about-images {
+    display: flex;
+    justify-content: center; /* Center images */
+    flex-wrap: wrap; /* Wrap images on smaller screens */
+    gap: 10px; /* Space between images */
+    margin-bottom: 20px; /* Space below images */
+}
+
+.about-images img {
+    width: 45%; /* Set width of images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+}
